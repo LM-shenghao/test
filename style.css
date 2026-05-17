@@ -131,3 +131,38 @@ footer {
 .theme-toggle:hover {
   background: var(--btn-hover-bg);
 }
+/* ==================== 首页列表 ==================== */
+.home-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.home-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+/* 小圆点装饰 */
+.home-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+.home-list a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.home-list a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
